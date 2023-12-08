@@ -61,8 +61,7 @@ impl CollateralizedLoanContract {
             .instance()
             .set(&DataKey::CollateralToken, &collateral_token);
 
-        // let interest_rate: i128 = 15000;
-        let interest_rate: i128 = 15000;
+        let interest_rate: i128 = 15000; // TODO: Should be configurated through params
 
         env.storage()
             .instance()
